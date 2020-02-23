@@ -18,8 +18,7 @@ import lombok.ToString;
 public class Movie {
     @Id
     @Column
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private int id;
 	
     @Column(length=4, nullable = false)
 	private int releaseYear;
@@ -30,35 +29,30 @@ public class Movie {
     @Column(length=16, nullable = false)
 	private int duration;
 	
-	@Column(length=256, nullable = false)
+	@Column(length=128, nullable = false)
 	private String actor;
 	
-	@Column(length=256, nullable = false)
+	@Column(length=128, nullable = false)
 	private String director;
 	
-	@Column(length=256, nullable = true)
+	@Column(length=64, nullable = true)
 	private String genre;
 	
-	@Column(length=256, nullable = true)
+	@Column(length=64, nullable = true)
 	private String country;
 	
 	@Column(length=256, nullable = true)
 	private String storyline;
 	
-	@Column(length=256, nullable = true)
+	@Column(length=128, nullable = true)
 	private String production;
-	@Builder
-	public Movie(int id, int releaseYear, String title, int duration, String actor, String director, String genre, String country, String storyline, String production) {
-		this.id = id;
-		this.releaseYear = releaseYear;
-		this.title = title;
-		this.duration = duration;
-		this.actor = actor;
-		this.director = director;
-		this.genre = genre;
-		this.country = country;
-		this.storyline = storyline;
-		this.production = production;
-	}
+	/*
+	 * @Builder public Movie(int id, int releaseYear, String title, int duration,
+	 * String actor, String director, String genre, String country, String
+	 * storyline, String production) { this.id = id; this.releaseYear = releaseYear;
+	 * this.title = title; this.duration = duration; this.actor = actor;
+	 * this.director = director; this.genre = genre; this.country = country;
+	 * this.storyline = storyline; this.production = production; }
+	 */
 	
 }
