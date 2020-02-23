@@ -15,3 +15,5 @@ I've tested this endpoint service with postman
 - DELETE  /movie/{id} (jh.yoo.project.movie.resource.MovieResource) **delete movie**
 - GET     /movie/{id} (jh.yoo.project.movie.resource.MovieResource) **get movie by id**
 
+# Run application in eclipse tool
+![ex_screenshot](./img/run.png)
