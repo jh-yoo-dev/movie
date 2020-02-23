@@ -46,13 +46,4 @@ public class Movie {
 	
 	@Column(length=128, nullable = true)
 	private String production;
-	/*
-	 * @Builder public Movie(int id, int releaseYear, String title, int duration,
-	 * String actor, String director, String genre, String country, String
-	 * storyline, String production) { this.id = id; this.releaseYear = releaseYear;
-	 * this.title = title; this.duration = duration; this.actor = actor;
-	 * this.director = director; this.genre = genre; this.country = country;
-	 * this.storyline = storyline; this.production = production; }
-	 */
-	
 }

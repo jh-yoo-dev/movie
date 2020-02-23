@@ -1,11 +1,5 @@
 package jh.yoo.proejct.movie;
 
-import org.jdbi.v3.core.Jdbi;
-import org.junit.Before;
-
-import io.dropwizard.jdbi3.JdbiFactory;
-import jh.yoo.project.movie.dao.MovieDao;
-import jh.yoo.project.movie.resource.MovieResource;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
